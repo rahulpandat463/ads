@@ -114,81 +114,77 @@ export default function PartnerTimeline() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 items-stretch">
 
             {/* Card 1: Phase 1 */}
-            <div className="bg-white rounded-2xl p-6 lg:p-7 border border-slate-200 shadow-[0_2px_15px_rgba(0,0,0,0.04)] text-left flex flex-col justify-between hover:shadow-md transition-shadow">
-              <div>
-                <div className="flex items-baseline gap-2">
-                  <h4 className="text-[19px] font-heading font-bold text-slate-900 tracking-tight">Phase 1</h4>
-                  <span className="text-[12.5px] font-normal text-slate-500">Turnover AED 50M+</span>
+            <div className="bg-white rounded-2xl p-6 lg:p-7 border border-slate-200 shadow-[0_2px_15px_rgba(0,0,0,0.04)] text-left flex flex-col hover:shadow-md transition-shadow">
+              <div className="flex items-baseline gap-2">
+                <h4 className="text-[19px] font-heading font-bold text-slate-900 tracking-tight">Phase 1</h4>
+                <span className="text-[12.5px] font-normal text-slate-500">Turnover AED 50M+</span>
+              </div>
+
+              <div className="my-5 flex items-center justify-between">
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+                    APPOINT AN ASP BY
+                  </p>
+                  <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
+                    30 Oct 2026
+                  </p>
                 </div>
 
-                <div className="my-5 flex items-center justify-between">
-                  <div>
-                    <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
-                      APPOINT AN ASP BY
-                    </p>
-                    <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
-                      30 Oct 2026
-                    </p>
-                  </div>
+                <div className="px-2 text-slate-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </div>
 
-                  <div className="px-2 text-slate-300">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </div>
-
-                  <div>
-                    <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
-                      GO-LIVE
-                    </p>
-                    <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
-                      1 Jan 2027
-                    </p>
-                  </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+                    GO-LIVE
+                  </p>
+                  <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
+                    1 Jan 2027
+                  </p>
                 </div>
               </div>
 
-              <p className="text-xs text-slate-500 leading-relaxed pt-2">
+              <p className="text-[13.5px] font-body text-slate-500 leading-relaxed mt-1">
                 First-wave businesses. Integration and testing sit between these two dates.
               </p>
             </div>
 
             {/* Card 2: Phase 2 */}
-            <div className="bg-white rounded-2xl p-6 lg:p-7 border border-slate-200 shadow-[0_2px_15px_rgba(0,0,0,0.04)] text-left flex flex-col justify-between hover:shadow-md transition-shadow">
-              <div>
-                <div className="flex items-baseline gap-2">
-                  <h4 className="text-[19px] font-heading font-bold text-slate-900 tracking-tight">Phase 2</h4>
-                  <span className="text-[12.5px] font-normal text-slate-500">Turnover under AED 50M</span>
+            <div className="bg-white rounded-2xl p-6 lg:p-7 border border-slate-200 shadow-[0_2px_15px_rgba(0,0,0,0.04)] text-left flex flex-col hover:shadow-md transition-shadow">
+              <div className="flex items-baseline gap-2">
+                <h4 className="text-[19px] font-heading font-bold text-slate-900 tracking-tight">Phase 2</h4>
+                <span className="text-[12.5px] font-normal text-slate-500">Turnover under AED 50M</span>
+              </div>
+
+              <div className="my-5 flex items-center justify-between">
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+                    APPOINT AN ASP BY
+                  </p>
+                  <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
+                    31 Mar 2027
+                  </p>
                 </div>
 
-                <div className="my-5 flex items-center justify-between">
-                  <div>
-                    <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
-                      APPOINT AN ASP BY
-                    </p>
-                    <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
-                      31 Mar 2027
-                    </p>
-                  </div>
+                <div className="px-2 text-slate-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </div>
 
-                  <div className="px-2 text-slate-300">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </div>
-
-                  <div>
-                    <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
-                      GO-LIVE
-                    </p>
-                    <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
-                      1 Jul 2027
-                    </p>
-                  </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+                    GO-LIVE
+                  </p>
+                  <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
+                    1 Jul 2027
+                  </p>
                 </div>
               </div>
 
-              <p className="text-xs text-slate-500 leading-relaxed pt-2">
+              <p className="text-[13.5px] font-body text-slate-500 leading-relaxed mt-1">
                 All remaining VAT-registered businesses.
               </p>
             </div>
@@ -199,47 +195,47 @@ export default function PartnerTimeline() {
               className="rounded-2xl p-6 lg:p-7 text-white shadow-xl shadow-[#2140A6]/20 text-left flex flex-col justify-between"
             >
               <div>
-                <p className="text-[11px] font-bold uppercase tracking-wider text-blue-100">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.06em] text-white/90 mb-3">
                   PHASE 1 GO-LIVE - 1 JAN 2027
                 </p>
 
-                <div className="my-4 grid grid-cols-4 gap-2 text-left">
+                <div className="my-4 flex items-center gap-4 sm:gap-5 text-left">
                   <div>
-                    <p className="text-3xl font-extrabold tracking-tight text-white leading-none">
+                    <p className="text-[28px] font-heading font-bold text-white leading-none">
                       {countdown.days}
                     </p>
-                    <p className="text-[9px] font-bold uppercase tracking-widest text-blue-200 mt-1.5">
+                    <p className="text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
                       DAYS
                     </p>
                   </div>
                   <div>
-                    <p className="text-3xl font-extrabold tracking-tight text-white leading-none">
+                    <p className="text-[28px] font-heading font-bold text-white leading-none">
                       {String(countdown.hours).padStart(2, "0")}
                     </p>
-                    <p className="text-[9px] font-bold uppercase tracking-widest text-blue-200 mt-1.5">
+                    <p className="text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
                       HRS
                     </p>
                   </div>
                   <div>
-                    <p className="text-3xl font-extrabold tracking-tight text-white leading-none">
+                    <p className="text-[28px] font-heading font-bold text-white leading-none">
                       {String(countdown.minutes).padStart(2, "0")}
                     </p>
-                    <p className="text-[9px] font-bold uppercase tracking-widest text-blue-200 mt-1.5">
+                    <p className="text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
                       MIN
                     </p>
                   </div>
                   <div>
-                    <p className="text-3xl font-extrabold tracking-tight text-white leading-none">
+                    <p className="text-[28px] font-heading font-bold text-white leading-none">
                       {String(countdown.seconds).padStart(2, "0")}
                     </p>
-                    <p className="text-[9px] font-bold uppercase tracking-widest text-blue-200 mt-1.5">
+                    <p className="text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
                       SEC
                     </p>
                   </div>
                 </div>
               </div>
 
-              <p className="text-xs text-blue-100 leading-relaxed pt-2">
+              <p className="text-[13px] font-body text-white/90 leading-relaxed mt-2">
                 Mandatory go-live for AED 50M+ businesses. Not sure which wave you&apos;re in? We&apos;ll confirm it in your readiness check.
               </p>
             </div>
