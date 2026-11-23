@@ -74,30 +74,30 @@ export default function ConsultationBooking() {
           </div>
 
           {/* RIGHT COLUMN: BOOKING FORM CARD */}
-          <div className="lg:col-span-6 w-full">
+          <div className="lg:col-span-6 w-full font-body">
             <div className="bg-white rounded-2xl p-6 sm:p-8 lg:p-9 border border-slate-200/90 shadow-[0_4px_30px_rgba(0,0,0,0.04)] text-left">
               {submitted ? (
                 <div className="py-8 text-center space-y-3 animate-in fade-in duration-300">
                   <div className="w-12 h-12 rounded-full bg-[#2140A6]/10 text-[#2140A6] flex items-center justify-center mx-auto">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900">Consultation Booked</h3>
-                  <p className="text-xs text-slate-600 max-w-xs mx-auto">
+                  <h3 className="font-heading text-xl font-bold text-slate-900">Consultation Booked</h3>
+                  <p className="font-body text-xs text-slate-600 max-w-xs mx-auto">
                     Thank you, <strong className="text-slate-800">{formData.fullName || "Partner"}</strong>. Our UAE team will review your inquiry for {formData.company || "your team"} and respond within one business day.
                   </p>
                   <button
                     type="button"
                     onClick={() => setSubmitted(false)}
-                    className="mt-3 px-5 py-2 text-xs font-semibold text-white bg-[#2140A6] hover:bg-[#183286] rounded-lg transition-colors cursor-pointer"
+                    className="mt-3 px-5 py-2 text-xs font-semibold text-white bg-[#2140A6] hover:bg-[#183286] rounded-lg transition-colors cursor-pointer font-body"
                   >
                     Submit Another Inquiry
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-3.5">
+                <form onSubmit={handleSubmit} className="space-y-3.5 font-body">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="space-y-1">
-                      <label className="block text-[11px] font-medium text-slate-700">
+                      <label className="block text-[11px] font-semibold text-slate-700 font-body">
                         Full name
                       </label>
                       <input
@@ -106,12 +106,12 @@ export default function ConsultationBooking() {
                         value={formData.fullName}
                         onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                         placeholder="Your name"
-                        className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all"
+                        className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all font-body"
                       />
                     </div>
 
                     <div className="space-y-1">
-                      <label className="block text-[11px] font-medium text-slate-700">
+                      <label className="block text-[11px] font-semibold text-slate-700 font-body">
                         Company
                       </label>
                       <input
@@ -120,14 +120,14 @@ export default function ConsultationBooking() {
                         value={formData.company}
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                         placeholder="Company name"
-                        className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all"
+                        className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all font-body"
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="space-y-1">
-                      <label className="block text-[11px] font-medium text-slate-700">
+                      <label className="block text-[11px] font-semibold text-slate-700 font-body">
                         Work email
                       </label>
                       <input
@@ -136,12 +136,12 @@ export default function ConsultationBooking() {
                         value={formData.workEmail}
                         onChange={(e) => setFormData({ ...formData, workEmail: e.target.value })}
                         placeholder="name@company.ae"
-                        className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all"
+                        className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all font-body"
                       />
                     </div>
 
                     <div className="space-y-1">
-                      <label className="block text-[11px] font-medium text-slate-700">
+                      <label className="block text-[11px] font-semibold text-slate-700 font-body">
                         Phone number
                       </label>
                       <input
@@ -150,13 +150,13 @@ export default function ConsultationBooking() {
                         value={formData.phoneNumber}
                         onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
                         placeholder="+971 50 000 0000"
-                        className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all"
+                        className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all font-body"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-1">
-                    <label className="block text-[11px] font-medium text-slate-700">
+                    <label className="block text-[11px] font-semibold text-slate-700 font-body">
                       Which ERP do you use?
                     </label>
                     <div className="relative">
@@ -164,7 +164,7 @@ export default function ConsultationBooking() {
                         required
                         value={formData.erpSystem}
                         onChange={(e) => setFormData({ ...formData, erpSystem: e.target.value })}
-                        className="w-full px-3 py-2 pr-9 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all appearance-none cursor-pointer"
+                        className="w-full px-3 py-2 pr-9 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all appearance-none cursor-pointer font-body"
                       >
                         <option value="" disabled>Select your system</option>
                         <option value="Sage 300 / X3">Sage 300 / X3</option>
@@ -179,7 +179,7 @@ export default function ConsultationBooking() {
                   </div>
 
                   <div className="space-y-1">
-                    <label className="block text-[11px] font-medium text-slate-700">
+                    <label className="block text-[11px] font-semibold text-slate-700 font-body">
                       What do you need help with?
                     </label>
                     <textarea
@@ -187,7 +187,7 @@ export default function ConsultationBooking() {
                       value={formData.helpMessage}
                       onChange={(e) => setFormData({ ...formData, helpMessage: e.target.value })}
                       placeholder="Readiness check, ASP appointment, integration timeline..."
-                      className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all resize-none"
+                      className="w-full px-3 py-2 rounded-lg border border-slate-300 bg-white text-slate-900 text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#2140A6] focus:border-[#2140A6] transition-all resize-none font-body"
                     />
                   </div>
 
@@ -195,7 +195,7 @@ export default function ConsultationBooking() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-3 px-5 rounded-lg text-white font-medium text-xs sm:text-sm bg-[#2140A6] hover:bg-[#183488] active:scale-[0.99] transition-all shadow-md shadow-[#2140A6]/25 flex items-center justify-center cursor-pointer disabled:opacity-75"
+                      className="w-full py-3 px-5 rounded-lg text-white font-heading font-bold text-sm bg-[#2140A6] hover:bg-[#183488] active:scale-[0.99] transition-all shadow-md shadow-[#2140A6]/25 flex items-center justify-center cursor-pointer disabled:opacity-75 tracking-normal"
                     >
                       {isSubmitting ? (
                         <span>Processing...</span>
@@ -205,7 +205,7 @@ export default function ConsultationBooking() {
                     </button>
                   </div>
 
-                  <p className="text-center text-[10px] sm:text-[11px] text-slate-500 pt-0.5">
+                  <p className="text-center text-[10px] sm:text-[11px] text-slate-500 pt-0.5 font-body">
                     A UAE consultant responds within one business day. No obligation.
                   </p>
                 </form>
