@@ -12,11 +12,11 @@ export default function Navbar() {
           <a href="#" className="flex items-center transition-opacity hover:opacity-95">
             <Image
               src="/logo-white.png"
-              alt="Suvrin Logo"
-              width={160}
-              height={45}
+              alt="Suvrin Technologies"
+              width={220}
+              height={97}
               priority
-              className="h-8 sm:h-9 w-auto object-contain"
+              className="h-10 sm:h-12 md:h-13 w-auto object-contain drop-shadow-sm"
             />
           </a>
         </div>
