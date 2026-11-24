@@ -16,9 +16,24 @@ export default function Navbar() {
               width={220}
               height={97}
               priority
-              className="h-10 sm:h-12 md:h-13 w-auto object-contain drop-shadow-sm"
+              className="h-9 sm:h-11 md:h-12 w-auto object-contain drop-shadow-sm"
             />
           </a>
+        </div>
+
+        {/* Mobile Hamburger Menu Toggle (matching reference mobile header) */}
+        <div className="flex lg:hidden items-center">
+          <button
+            type="button"
+            className="w-10 h-10 flex items-center justify-center rounded-lg border border-white/25 bg-white/5 hover:bg-white/10 transition-colors focus:outline-none"
+            aria-label="Toggle navigation menu"
+          >
+            <div className="flex flex-col justify-center items-center gap-[4.5px]">
+              <span className="w-5 h-[2px] bg-white rounded-full block"></span>
+              <span className="w-5 h-[2px] bg-white rounded-full block"></span>
+              <span className="w-5 h-[2px] bg-white rounded-full block"></span>
+            </div>
+          </button>
         </div>
       </div>
     </header>

@@ -47,7 +47,7 @@ export default function WhySuvrin() {
           {pillars.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-[0_2px_15px_rgba(0,0,0,0.03)] hover:shadow-lg hover:border-[#2140A6]/40 transition-all duration-300 text-left flex flex-col justify-start group"
+              className="bg-white rounded-2xl p-5 sm:p-6 lg:p-7 border border-slate-200 shadow-[0_2px_15px_rgba(0,0,0,0.03)] hover:shadow-lg hover:border-[#2140A6]/40 transition-all duration-300 text-left flex flex-col justify-start group"
             >
               {/* Rounded Icon Badge */}
               <div className="w-10 h-10 rounded-xl bg-blue-50/80 border border-blue-100 flex items-center justify-center mb-5 group-hover:scale-105 group-hover:bg-[#2140A6]/10 transition-transform">

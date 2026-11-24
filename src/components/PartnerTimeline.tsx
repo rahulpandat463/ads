@@ -69,20 +69,20 @@ export default function PartnerTimeline() {
         </div>
 
         {/* INFINITE SMOOTH LOGO MARQUEE */}
-        <div className="space-y-3 sm:space-y-4 overflow-hidden">
+        <div className="space-y-4 sm:space-y-5 overflow-hidden py-1">
           {/* ROW 1: Smooth Left Flow */}
           <div className="relative w-full overflow-hidden mask-marquee">
-            <div className="flex animate-marquee gap-8 sm:gap-11 lg:gap-14 items-center py-1">
+            <div className="flex animate-marquee gap-6 sm:gap-10 lg:gap-14 items-center py-1">
               {[...row1Logos, ...row1Logos, ...row1Logos].map((partner, index) => (
                 <div
                   key={`${partner.name}-${index}`}
-                  className="flex-shrink-0 flex items-center justify-center px-1"
+                  className="flex-shrink-0 flex items-center justify-center px-2 sm:px-4"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={`/partner/${encodeURIComponent(partner.file)}`}
                     alt={partner.name}
-                    className="h-7 sm:h-8 md:h-9 w-auto max-w-[110px] sm:max-w-[135px] object-contain transition-transform duration-200 hover:scale-105"
+                    className="h-10 sm:h-12 md:h-14 w-auto max-w-[140px] sm:max-w-[200px] object-contain transition-transform duration-200 hover:scale-105 opacity-90"
                   />
                 </div>
               ))}
@@ -91,17 +91,17 @@ export default function PartnerTimeline() {
 
           {/* ROW 2: Smooth Right Flow */}
           <div className="relative w-full overflow-hidden mask-marquee">
-            <div className="flex animate-marquee-reverse gap-8 sm:gap-11 lg:gap-14 items-center py-1">
+            <div className="flex animate-marquee-reverse gap-6 sm:gap-10 lg:gap-14 items-center py-1">
               {[...row2Logos, ...row2Logos, ...row2Logos].map((partner, index) => (
                 <div
                   key={`${partner.name}-${index}`}
-                  className="flex-shrink-0 flex items-center justify-center px-1"
+                  className="flex-shrink-0 flex items-center justify-center px-2 sm:px-4"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={`/partner/${encodeURIComponent(partner.file)}`}
                     alt={partner.name}
-                    className="h-7 sm:h-8 md:h-9 w-auto max-w-[110px] sm:max-w-[135px] object-contain transition-transform duration-200 hover:scale-105"
+                    className="h-10 sm:h-12 md:h-14 w-auto max-w-[140px] sm:max-w-[200px] object-contain transition-transform duration-200 hover:scale-105 opacity-90"
                   />
                 </div>
               ))}
@@ -110,81 +110,80 @@ export default function PartnerTimeline() {
         </div>
 
         {/* TIMELINE & GO-LIVE CARDS */}
-        <div className="pt-1">
+        <div className="pt-2">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 items-stretch">
 
             {/* Card 1: Phase 1 */}
-            <div className="bg-white rounded-2xl p-6 lg:p-7 border border-slate-200 shadow-[0_2px_15px_rgba(0,0,0,0.04)] text-left flex flex-col hover:shadow-md transition-shadow">
-              <div className="flex items-baseline gap-2">
-                <h4 className="text-[19px] font-heading font-bold text-slate-900 tracking-tight">Phase 1</h4>
-                <span className="text-[12.5px] font-normal text-slate-500">Turnover AED 50M+</span>
+            <div className="bg-white rounded-2xl p-5 sm:p-6 lg:p-7 border border-slate-200 border-t-4 border-t-[#2140A6] shadow-[0_4px_20px_rgba(33,64,166,0.06)] text-left flex flex-col hover:shadow-md transition-shadow">
+              <div className="flex items-baseline gap-2 mb-1">
+                <h4 className="text-[19px] font-heading font-bold text-[#2140A6] tracking-tight">Phase 1</h4>
+                <span className="text-[12.5px] font-normal text-[#5A6470]">Turnover AED 50M+</span>
               </div>
 
-              <div className="my-5 flex items-center justify-between">
-                <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+              <div className="my-4 sm:my-5 space-y-3 sm:space-y-0 sm:flex sm:items-center sm:justify-between sm:gap-3">
+                <div className="min-w-0">
+                  <p className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider text-[#2140A6] mb-0.5 truncate">
                     APPOINT AN ASP BY
                   </p>
-                  <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
-                    30 Oct 2026
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <p className="text-[20px] xs:text-[22px] sm:text-[24px] lg:text-[26px] font-heading font-bold text-[#0a1844] leading-tight whitespace-nowrap">
+                      30 Oct 2026
+                    </p>
+                    <span className="text-lg font-bold text-[#2140A6] leading-none sm:hidden">→</span>
+                  </div>
                 </div>
 
-                <div className="px-2 text-slate-300">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
+                <div className="hidden sm:block text-[#2140A6] px-1 sm:px-2 flex-shrink-0 pt-3">
+                  <span className="text-lg sm:text-2xl font-bold leading-none">→</span>
                 </div>
 
-                <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+                <div className="min-w-0">
+                  <p className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider text-[#2140A6] mb-0.5 truncate">
                     GO-LIVE
                   </p>
-                  <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
+                  <p className="text-[20px] xs:text-[22px] sm:text-[24px] lg:text-[26px] font-heading font-bold text-[#0a1844] leading-tight whitespace-nowrap">
                     1 Jan 2027
                   </p>
                 </div>
               </div>
 
-              <p className="text-[13.5px] font-body text-slate-500 leading-relaxed mt-1">
+              <p className="text-[13.5px] font-body text-[#5A6470] leading-relaxed mt-1">
                 First-wave businesses. Integration and testing sit between these two dates.
               </p>
             </div>
 
             {/* Card 2: Phase 2 */}
-            <div className="bg-white rounded-2xl p-6 lg:p-7 border border-slate-200 shadow-[0_2px_15px_rgba(0,0,0,0.04)] text-left flex flex-col hover:shadow-md transition-shadow">
-              <div className="flex items-baseline gap-2">
-                <h4 className="text-[19px] font-heading font-bold text-slate-900 tracking-tight">Phase 2</h4>
-                <span className="text-[12.5px] font-normal text-slate-500">Turnover under AED 50M</span>
+            <div className="bg-white rounded-2xl p-5 sm:p-6 lg:p-7 border border-slate-200 border-t-4 border-t-[#2563EB] shadow-[0_4px_20px_rgba(33,64,166,0.06)] text-left flex flex-col hover:shadow-md transition-shadow">
+              <div className="flex items-baseline gap-2 mb-1">
+                <h4 className="text-[19px] font-heading font-bold text-[#2140A6] tracking-tight">Phase 2</h4>
+                <span className="text-[12.5px] font-normal text-[#5A6470]">Turnover under AED 50M</span>
               </div>
 
-              <div className="my-5 flex items-center justify-between">
-                <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+              <div className="my-4 sm:my-5 space-y-3 sm:space-y-0 sm:flex sm:items-center sm:justify-between sm:gap-3">
+                <div className="min-w-0">
+                  <p className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider text-[#2140A6] mb-0.5 truncate">
                     APPOINT AN ASP BY
                   </p>
-                  <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
+                  <p className="text-[20px] xs:text-[22px] sm:text-[24px] lg:text-[26px] font-heading font-bold text-[#0a1844] leading-tight whitespace-nowrap">
                     31 Mar 2027
                   </p>
                 </div>
 
-                <div className="px-2 text-slate-300">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
+                <div className="hidden sm:block text-[#2563EB] px-1 sm:px-2 flex-shrink-0 pt-3">
+                  <span className="text-lg sm:text-2xl font-bold leading-none">→</span>
                 </div>
 
-                <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+                <div className="min-w-0">
+                  <p className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider text-[#2140A6] mb-0.5 truncate">
                     GO-LIVE
                   </p>
-                  <p className="text-[26px] font-heading font-bold text-slate-900 mt-0.5 leading-[1.1]">
+                  <p className="text-[20px] xs:text-[22px] sm:text-[24px] lg:text-[26px] font-heading font-bold text-[#0a1844] leading-tight whitespace-nowrap">
                     1 Jul 2027
                   </p>
                 </div>
               </div>
 
-              <p className="text-[13.5px] font-body text-slate-500 leading-relaxed mt-1">
+              <p className="text-[13.5px] font-body text-[#5A6470] leading-relaxed mt-1">
                 All remaining VAT-registered businesses.
               </p>
             </div>
@@ -192,50 +191,50 @@ export default function PartnerTimeline() {
             {/* Card 3: Phase 1 Go-Live Countdown Card (Corporate Brand Blue #2140A6) */}
             <div
               style={{ backgroundColor: "#2140A6" }}
-              className="rounded-2xl p-6 lg:p-7 text-white shadow-xl shadow-[#2140A6]/20 text-left flex flex-col justify-between"
+              className="rounded-2xl p-5 sm:p-6 lg:p-7 text-white shadow-xl shadow-[#2140A6]/20 text-left flex flex-col justify-between"
             >
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.06em] text-white/90 mb-3">
                   PHASE 1 GO-LIVE - 1 JAN 2027
                 </p>
 
-                <div className="my-4 flex items-center gap-4 sm:gap-5 text-left">
+                <div className="my-4 flex items-center justify-between sm:justify-start gap-2 sm:gap-5 text-left">
                   <div>
-                    <p className="text-[28px] font-heading font-bold text-white leading-none">
+                    <p className="text-[26px] sm:text-[28px] font-heading font-bold text-white leading-none">
                       {countdown.days}
                     </p>
-                    <p className="text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
+                    <p className="text-[10px] sm:text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
                       DAYS
                     </p>
                   </div>
                   <div>
-                    <p className="text-[28px] font-heading font-bold text-white leading-none">
+                    <p className="text-[26px] sm:text-[28px] font-heading font-bold text-white leading-none">
                       {String(countdown.hours).padStart(2, "0")}
                     </p>
-                    <p className="text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
+                    <p className="text-[10px] sm:text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
                       HRS
                     </p>
                   </div>
                   <div>
-                    <p className="text-[28px] font-heading font-bold text-white leading-none">
+                    <p className="text-[26px] sm:text-[28px] font-heading font-bold text-white leading-none">
                       {String(countdown.minutes).padStart(2, "0")}
                     </p>
-                    <p className="text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
+                    <p className="text-[10px] sm:text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
                       MIN
                     </p>
                   </div>
                   <div>
-                    <p className="text-[28px] font-heading font-bold text-white leading-none">
+                    <p className="text-[26px] sm:text-[28px] font-heading font-bold text-white leading-none">
                       {String(countdown.seconds).padStart(2, "0")}
                     </p>
-                    <p className="text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
+                    <p className="text-[10px] sm:text-[11px] font-body font-normal uppercase tracking-[0.6px] text-white/80 mt-1.5">
                       SEC
                     </p>
                   </div>
                 </div>
               </div>
 
-              <p className="text-[13px] font-body text-white/90 leading-relaxed mt-2">
+              <p className="text-[12.5px] sm:text-[13px] font-body text-white/90 leading-relaxed mt-2">
                 Mandatory go-live for AED 50M+ businesses. Not sure which wave you&apos;re in? We&apos;ll confirm it in your readiness check.
               </p>
             </div>

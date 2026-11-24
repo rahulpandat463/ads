@@ -148,7 +148,7 @@ export default function FindYourPath() {
                 type="button"
                 key={system.id}
                 onClick={() => setSelectedSystem(system.id)}
-                className={`rounded-2xl p-6 text-left flex flex-col justify-between transition-all duration-200 cursor-pointer ${isSelected
+                className={`rounded-2xl p-5 sm:p-6 text-left flex flex-col justify-between transition-all duration-200 cursor-pointer ${isSelected
                   ? "bg-white border-2 border-[#2140A6] shadow-[0_6px_25px_rgba(33,64,166,0.12)] scale-[1.01]"
                   : "bg-white border border-slate-200 hover:border-slate-300 shadow-[0_2px_15px_rgba(0,0,0,0.03)] hover:shadow-md"
                   }`}
@@ -181,7 +181,7 @@ export default function FindYourPath() {
         </div>
 
         {/* Dynamic Solution Details Panel */}
-        <div className="rounded-2xl border border-slate-200/90 p-6 sm:p-7 lg:p-8 bg-white shadow-[0_4px_30px_rgba(0,0,0,0.03)] transition-all">
+        <div className="rounded-2xl border border-slate-200/90 p-5 sm:p-7 lg:p-8 bg-white shadow-[0_4px_30px_rgba(0,0,0,0.03)] transition-all">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
 
             {/* Left: Solution Context & CTA */}

@@ -48,12 +48,12 @@ export default function KsaSuccessSlider() {
 
         {/* Carousel / Logo Cards */}
         <div className="relative">
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4 lg:gap-5 items-stretch">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4 lg:gap-5 items-stretch">
             {visibleClients.map((client, i) => (
               <div
                 key={`${client.name}-${i}`}
-                className={`bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-xs hover:shadow-md hover:border-[#2140A6]/40 transition-all items-center justify-center min-h-[90px] sm:min-h-[105px] ${
-                  i === 4 ? "hidden lg:flex" : "flex"
+                className={`bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-xs hover:shadow-md hover:border-[#2140A6]/40 transition-all items-center justify-center min-h-[105px] sm:min-h-[115px] ${
+                  i >= 2 ? (i === 4 ? "hidden lg:flex" : "hidden sm:flex") : "flex"
                 }`}
               >
                 <Image
@@ -61,14 +61,14 @@ export default function KsaSuccessSlider() {
                   alt={client.name}
                   width={client.width}
                   height={client.height}
-                  className="max-h-8 sm:max-h-11 w-auto object-contain"
+                  className="max-h-9 sm:max-h-11 w-auto object-contain"
                 />
               </div>
             ))}
           </div>
 
           {/* Nav Buttons */}
-          <div className="flex items-center justify-center gap-3 pt-6">
+          <div className="flex items-center justify-center gap-3 pt-5 sm:pt-6">
             <button
               type="button"
               onClick={prevSlide}

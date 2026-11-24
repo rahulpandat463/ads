@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white text-slate-600 py-12 border-t border-slate-200 relative z-20 font-body">
+    <footer className="w-full bg-white text-slate-600 py-8 sm:py-12 border-t border-slate-200 relative z-20 font-body">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10 text-sm">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-10 text-left items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 mb-8 sm:mb-10 text-left items-start">
           
           {/* Left Column: Brand Logo & Bio */}
           <div className="md:col-span-6 space-y-4">
@@ -22,7 +22,7 @@ export default function Footer() {
                 alt="Suvrin Technologies"
                 width={200}
                 height={60}
-                className="h-14 sm:h-16 w-auto object-contain block bg-transparent"
+                className="h-11 sm:h-14 md:h-16 w-auto object-contain block bg-transparent"
               />
             </a>
             <p className="font-body text-slate-500 leading-relaxed max-w-md text-sm font-normal">

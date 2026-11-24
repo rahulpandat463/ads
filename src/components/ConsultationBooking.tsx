@@ -56,7 +56,7 @@ export default function ConsultationBooking() {
             <ul className="space-y-3 pt-2">
               {guarantees.map((item, index) => (
                 <li key={index} className="flex items-center gap-3 text-xs sm:text-[13.5px] text-slate-700">
-                  <Check className="w-4 h-4 text-emerald-600 flex-shrink-0 stroke-[2.5]" />
+                  <Check className="w-4 h-4 text-[#2140A6] flex-shrink-0 stroke-[2.5]" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -75,7 +75,7 @@ export default function ConsultationBooking() {
 
           {/* RIGHT COLUMN: BOOKING FORM CARD */}
           <div className="lg:col-span-6 w-full font-body">
-            <div className="bg-white rounded-2xl p-6 sm:p-8 lg:p-9 border border-slate-200/90 shadow-[0_4px_30px_rgba(0,0,0,0.04)] text-left">
+            <div className="bg-white rounded-2xl p-5 sm:p-8 lg:p-9 border border-slate-200/90 shadow-[0_4px_30px_rgba(0,0,0,0.04)] text-left">
               {submitted ? (
                 <div className="py-8 text-center space-y-3 animate-in fade-in duration-300">
                   <div className="w-12 h-12 rounded-full bg-[#2140A6]/10 text-[#2140A6] flex items-center justify-center mx-auto">

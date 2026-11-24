@@ -21,11 +21,11 @@ export default function SuvrinProcess() {
 
           {/* Left Text */}
           <div className="max-w-[58ch] text-left">
-            <div className="text-[12.5px] tracking-[1.6px] uppercase font-semibold text-[#1F7A5C] mb-3.5">
+            <div className="text-[12.5px] tracking-[1.6px] uppercase font-semibold text-[#2140A6] mb-3.5">
               The Suvrin process
             </div>
             <h2 className="font-heading font-bold text-[28px] sm:text-[34px] lg:text-[42px] leading-[1.15] tracking-[-0.8px] text-slate-900 mb-4">
-              Everyone else builds a solution. <span className="text-[#2E9E7B]">We connect one</span>.
+              Everyone else builds a solution. <span className="text-[#2140A6]">We connect one</span>.
             </h2>
             <p className="font-body text-[16px] sm:text-[17px] text-[#5A6470] leading-relaxed">
               Most providers build a solution from scratch, design, develop, test. We connect one that already exists and is certified. The work is integration, not invention.
@@ -33,38 +33,38 @@ export default function SuvrinProcess() {
           </div>
 
           {/* Right Architecture Flow Diagram */}
-          <div className="relative bg-[radial-gradient(120%_120%_at_20%_0%,#F4F5FB_0%,#E9F5F0_55%,#DCEFE7_100%)] border border-[#E7EAF2] rounded-[20px] p-4 sm:p-5 overflow-hidden flex items-center justify-center">
+          <div className="relative bg-[radial-gradient(120%_120%_at_20%_0%,#F4F5FB_0%,#EBF2FC_55%,#DDE9F9_100%)] border border-[#E7EAF2] rounded-[20px] p-4 sm:p-5 overflow-hidden flex items-center justify-center">
             {/* Background Decorative Rings */}
-            <div className="absolute w-[320px] h-[320px] rounded-full border border-dashed border-[#2E9E7B]/30 -top-[70px] -right-[90px] pointer-events-none" />
-            <div className="absolute w-[200px] h-[200px] rounded-full border border-[#2E9E7B]/20 -bottom-[60px] -left-[50px] pointer-events-none" />
+            <div className="absolute w-[320px] h-[320px] rounded-full border border-dashed border-[#2140A6]/20 -top-[70px] -right-[90px] pointer-events-none" />
+            <div className="absolute w-[200px] h-[200px] rounded-full border border-[#2140A6]/15 -bottom-[60px] -left-[50px] pointer-events-none" />
 
             {/* Connecting Flow */}
             <div className="relative flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-2.5 w-full">
               {/* Box 1: Your ERP */}
-              <div className="bg-white border border-[#DCE6E1] rounded-xl px-3 py-2.5 shadow-[0_8px_20px_rgba(11,59,46,0.09)] flex-1 w-full sm:w-auto text-center min-w-0">
-                <div className="font-heading font-bold text-[14.5px] text-[#0B3B2E] leading-tight">Your ERP</div>
+              <div className="bg-white border border-[#DCE6E1] rounded-xl px-3 py-2.5 shadow-[0_8px_20px_rgba(33,64,166,0.06)] flex-1 w-full sm:w-auto text-center min-w-0">
+                <div className="font-heading font-bold text-[14.5px] text-[#0a1844] leading-tight">Your ERP</div>
                 <div className="font-body text-[11px] leading-[1.35] text-[#8A93A3] mt-0.5">Sage · Dynamics · Zoho</div>
               </div>
 
               {/* Dotted Connector 1 with Pulse Dot */}
-              <div className="relative h-5 w-0.5 sm:h-[2px] sm:w-auto sm:flex-1 sm:min-w-[18px] bg-[repeating-linear-gradient(90deg,#3CBE93_0_5px,transparent_5px_10px)] max-sm:bg-[repeating-linear-gradient(180deg,#3CBE93_0_5px,transparent_5px_10px)]">
-                <span className="hidden sm:block absolute -top-[3px] w-2 h-2 rounded-full bg-[#2E9E7B] animate-flow-pulse" />
+              <div className="relative h-5 w-0.5 sm:h-[2px] sm:w-auto sm:flex-1 sm:min-w-[18px] bg-[repeating-linear-gradient(90deg,#2140A6_0_5px,transparent_5px_10px)] max-sm:bg-[repeating-linear-gradient(180deg,#2140A6_0_5px,transparent_5px_10px)]">
+                <span className="hidden sm:block absolute -top-[3px] w-2 h-2 rounded-full bg-[#2140A6] animate-flow-pulse" />
               </div>
 
-              {/* Box 2: Certified Engine (Solid Deep Forest #0B3B2E) */}
-              <div className="bg-[#0B3B2E] border border-[#0B3B2E] rounded-xl px-3 py-2.5 shadow-[0_8px_20px_rgba(11,59,46,0.09)] flex-1 w-full sm:w-auto text-center min-w-0">
+              {/* Box 2: Certified Engine (Solid Corporate Blue #2140A6) */}
+              <div className="bg-[#2140A6] border border-[#2140A6] rounded-xl px-3 py-2.5 shadow-[0_8px_20px_rgba(33,64,166,0.18)] flex-1 w-full sm:w-auto text-center min-w-0">
                 <div className="font-heading font-bold text-[14.5px] text-white leading-tight">Certified engine</div>
-                <div className="font-body text-[11px] leading-[1.35] text-white/70 mt-0.5">Validate · convert · report</div>
+                <div className="font-body text-[11px] leading-[1.35] text-white/80 mt-0.5">Validate · convert · report</div>
               </div>
 
               {/* Dotted Connector 2 with Pulse Dot */}
-              <div className="relative h-5 w-0.5 sm:h-[2px] sm:w-auto sm:flex-1 sm:min-w-[18px] bg-[repeating-linear-gradient(90deg,#3CBE93_0_5px,transparent_5px_10px)] max-sm:bg-[repeating-linear-gradient(180deg,#3CBE93_0_5px,transparent_5px_10px)]">
-                <span className="hidden sm:block absolute -top-[3px] w-2 h-2 rounded-full bg-[#2E9E7B] animate-flow-pulse-delayed" />
+              <div className="relative h-5 w-0.5 sm:h-[2px] sm:w-auto sm:flex-1 sm:min-w-[18px] bg-[repeating-linear-gradient(90deg,#2140A6_0_5px,transparent_5px_10px)] max-sm:bg-[repeating-linear-gradient(180deg,#2140A6_0_5px,transparent_5px_10px)]">
+                <span className="hidden sm:block absolute -top-[3px] w-2 h-2 rounded-full bg-[#2140A6] animate-flow-pulse-delayed" />
               </div>
 
               {/* Box 3: FTA */}
-              <div className="bg-white border border-[#DCE6E1] rounded-xl px-3 py-2.5 shadow-[0_8px_20px_rgba(11,59,46,0.09)] flex-1 w-full sm:w-auto text-center min-w-0">
-                <div className="font-heading font-bold text-[14.5px] text-[#0B3B2E] leading-tight">FTA</div>
+              <div className="bg-white border border-[#DCE6E1] rounded-xl px-3 py-2.5 shadow-[0_8px_20px_rgba(33,64,166,0.06)] flex-1 w-full sm:w-auto text-center min-w-0">
+                <div className="font-heading font-bold text-[14.5px] text-[#0a1844] leading-tight">FTA</div>
                 <div className="font-body text-[11px] leading-[1.35] text-[#8A93A3] mt-0.5">Reported · accepted</div>
               </div>
             </div>
@@ -144,8 +144,8 @@ export default function SuvrinProcess() {
                 right: "66.67%",
                 top: "2px",
                 bottom: "12px",
-                borderLeft: "2px dashed #3CBE93",
-                borderBottom: "2px dashed #3CBE93",
+                borderLeft: "2px dashed #2140A6",
+                borderBottom: "2px dashed #2140A6",
                 borderBottomLeftRadius: "12px",
               }}
             />
@@ -158,7 +158,7 @@ export default function SuvrinProcess() {
                 height: 0,
                 borderLeft: "5px solid transparent",
                 borderRight: "5px solid transparent",
-                borderTop: "8px solid #3CBE93",
+                borderTop: "8px solid #2140A6",
                 top: "20px",
               }}
             />
@@ -166,21 +166,21 @@ export default function SuvrinProcess() {
 
           {/* TRACK 2: The Suvrin Route (5 Steps) */}
           <div className="flex flex-wrap items-baseline gap-2 sm:gap-3.5 mb-2.5 mt-5 lg:mt-0">
-            <div className="font-heading font-bold text-[17px] text-[#0B3B2E]">
+            <div className="font-heading font-bold text-[17px] text-[#0a1844]">
               The Suvrin route has five steps
             </div>
             <div className="flex items-center flex-wrap gap-2">
-              <span className="font-body text-[14px] font-semibold text-[#2E9E7B]">
+              <span className="font-body text-[14px] font-semibold text-[#2140A6]">
                 No solution design. No development. Just connection.
               </span>
-              <span className="text-[11.5px] font-bold tracking-[0.3px] text-[#1F7A5C] bg-[#E6F7F0] border border-[#C9EDDE] rounded-full px-3 py-1 whitespace-nowrap">
+              <span className="text-[11.5px] font-bold tracking-[0.3px] text-[#2140A6] bg-blue-50 border border-blue-200 rounded-full px-3 py-1 whitespace-nowrap">
                 2 phases skipped
               </span>
             </div>
           </div>
 
           {/* Progress Gradient Line */}
-          <div className="h-[3px] rounded-full bg-gradient-to-r from-[#0B3B2E] via-[#1F7A5C] to-[#3CBE93] mb-3" />
+          <div className="h-[3px] rounded-full bg-gradient-to-r from-[#0a1844] via-[#2140A6] to-[#60a5fa] mb-3" />
 
           {/* 6-Column Grid for the 5 Suvrin Steps (Step 2 spans 2 columns!) */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3 items-stretch">
@@ -188,10 +188,10 @@ export default function SuvrinProcess() {
             {/* Step 1: Readiness Assessment (col 1 / span 1) */}
             <div className="lg:col-span-1 bg-white border border-[#DCE6E1] rounded-xl p-3.5 hover:-translate-y-1 hover:shadow-md transition-all duration-200 flex flex-col justify-start">
               <div className="flex items-center gap-2.5 mb-2">
-                <span className="w-[26px] h-[26px] rounded-full bg-[#0B3B2E] text-white font-heading font-bold text-[13px] flex items-center justify-center flex-shrink-0">
+                <span className="w-[26px] h-[26px] rounded-full bg-[#2140A6] text-white font-heading font-bold text-[13px] flex items-center justify-center flex-shrink-0">
                   1
                 </span>
-                <span className="font-heading font-bold text-[16px] leading-[1.25] text-[#0B3B2E]">
+                <span className="font-heading font-bold text-[16px] leading-[1.25] text-[#0a1844]">
                   Readiness assessment
                 </span>
               </div>
@@ -200,10 +200,10 @@ export default function SuvrinProcess() {
               </p>
             </div>
 
-            {/* Step 2: Integration (col 2 / span 2 - Double Wide Hero Step in Dark Teal #0B3B2E!) */}
-            <div className="sm:col-span-2 lg:col-span-2 bg-[#0B3B2E] border border-[#0B3B2E] rounded-xl p-3.5 text-white shadow-xl shadow-[#0B3B2E]/15 hover:-translate-y-1 hover:shadow-2xl transition-all duration-200 flex flex-col justify-start">
+            {/* Step 2: Integration (col 2 / span 2 - Double Wide Hero Step in Brand Blue #2140A6!) */}
+            <div className="sm:col-span-2 lg:col-span-2 bg-[#2140A6] border border-[#2140A6] rounded-xl p-3.5 text-white shadow-xl shadow-[#2140A6]/20 hover:-translate-y-1 hover:shadow-2xl transition-all duration-200 flex flex-col justify-start">
               <div className="flex items-center gap-2.5 mb-2">
-                <span className="w-[26px] h-[26px] rounded-full bg-[#3CBE93] text-white font-heading font-bold text-[13px] flex items-center justify-center flex-shrink-0">
+                <span className="w-[26px] h-[26px] rounded-full bg-[#60A5FA] text-white font-heading font-bold text-[13px] flex items-center justify-center flex-shrink-0">
                   2
                 </span>
                 <span className="font-heading font-bold text-[16px] leading-[1.25] text-white">
@@ -218,10 +218,10 @@ export default function SuvrinProcess() {
             {/* Step 3: Deployment (col 4 / span 1) */}
             <div className="lg:col-span-1 bg-white border border-[#DCE6E1] rounded-xl p-3.5 hover:-translate-y-1 hover:shadow-md transition-all duration-200 flex flex-col justify-start">
               <div className="flex items-center gap-2.5 mb-2">
-                <span className="w-[26px] h-[26px] rounded-full bg-[#2E9E7B] text-white font-heading font-bold text-[13px] flex items-center justify-center flex-shrink-0">
+                <span className="w-[26px] h-[26px] rounded-full bg-[#2563EB] text-white font-heading font-bold text-[13px] flex items-center justify-center flex-shrink-0">
                   3
                 </span>
-                <span className="font-heading font-bold text-[16px] leading-[1.25] text-[#0B3B2E]">
+                <span className="font-heading font-bold text-[16px] leading-[1.25] text-[#0a1844]">
                   Deployment
                 </span>
               </div>
@@ -233,10 +233,10 @@ export default function SuvrinProcess() {
             {/* Step 4: Testing (col 5 / span 1) */}
             <div className="lg:col-span-1 bg-white border border-[#DCE6E1] rounded-xl p-3.5 hover:-translate-y-1 hover:shadow-md transition-all duration-200 flex flex-col justify-start">
               <div className="flex items-center gap-2.5 mb-2">
-                <span className="w-[26px] h-[26px] rounded-full bg-[#35B189] text-white font-heading font-bold text-[13px] flex items-center justify-center flex-shrink-0">
+                <span className="w-[26px] h-[26px] rounded-full bg-[#3b82f6] text-white font-heading font-bold text-[13px] flex items-center justify-center flex-shrink-0">
                   4
                 </span>
-                <span className="font-heading font-bold text-[16px] leading-[1.25] text-[#0B3B2E]">
+                <span className="font-heading font-bold text-[16px] leading-[1.25] text-[#0a1844]">
                   Testing
                 </span>
               </div>
@@ -248,10 +248,10 @@ export default function SuvrinProcess() {
             {/* Step 5: Go-live (col 6 / span 1) */}
             <div className="lg:col-span-1 bg-white border border-[#DCE6E1] rounded-xl p-3.5 hover:-translate-y-1 hover:shadow-md transition-all duration-200 flex flex-col justify-start">
               <div className="flex items-center gap-2.5 mb-2">
-                <span className="w-[26px] h-[26px] rounded-full bg-[#3CBE93] text-white font-heading font-bold text-[13px] flex items-center justify-center flex-shrink-0">
+                <span className="w-[26px] h-[26px] rounded-full bg-[#60a5fa] text-white font-heading font-bold text-[13px] flex items-center justify-center flex-shrink-0">
                   5
                 </span>
-                <span className="font-heading font-bold text-[16px] leading-[1.25] text-[#0B3B2E]">
+                <span className="font-heading font-bold text-[16px] leading-[1.25] text-[#0a1844]">
                   Go-live
                 </span>
               </div>

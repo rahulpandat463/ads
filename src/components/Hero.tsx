@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative w-full text-white overflow-hidden pt-20 sm:pt-24 lg:pt-28 pb-12 sm:pb-14 lg:pb-16 px-4 sm:px-6 lg:px-8"
+      className="relative w-full text-white overflow-hidden pt-16 sm:pt-24 lg:pt-28 pb-12 sm:pb-14 lg:pb-16 px-4 sm:px-6 lg:px-8"
       style={{
         backgroundColor: "#0b1220",
         backgroundImage: `url('/hero-boardroom.jpg')`,
@@ -54,39 +54,39 @@ export default function Hero() {
         
         {/* LEFT COLUMN: HERO INFORMATION */}
         <div className="lg:col-span-7 text-left space-y-3 sm:space-y-4">
-          <div className="inline-flex items-center text-[11px] sm:text-[12.5px] tracking-[1.6px] uppercase font-semibold text-blue-200 border border-white/20 bg-black/35 backdrop-blur-sm px-3 py-1 sm:px-4 sm:py-1.5 rounded-full mb-2 sm:mb-4 max-w-full leading-tight font-body">
+          <div className="inline-flex items-center text-[10.5px] sm:text-[12.5px] tracking-[1.4px] uppercase font-semibold text-blue-100 border border-white/20 bg-black/35 backdrop-blur-sm px-3 py-1 sm:px-4 sm:py-1.5 rounded-full mb-1 sm:mb-3 max-w-full leading-tight font-body">
             E-invoicing compliance UAE · Sage · Microsoft · Zoho
           </div>
 
-          <h1 className="font-heading font-light text-[24px] sm:text-3xl md:text-4xl lg:text-[46px] leading-[1.18] tracking-[-0.8px] text-white">
+          <h1 className="font-heading font-bold text-[28px] xs:text-[31px] sm:text-4xl lg:text-[48px] leading-[1.18] tracking-[-0.6px] text-white">
             Become UAE E-Invoicing compliant in 2026{" "}
-            <span className="text-[#60a5fa] font-medium">
+            <span className="text-[#60A5FA] font-bold">
               without changing your ERP.
             </span>
           </h1>
 
-          <p className="font-body text-xs sm:text-sm md:text-[15.5px] text-white/85 max-w-[54ch] leading-relaxed">
+          <p className="font-body text-[15px] sm:text-[16.5px] text-white/80 max-w-[54ch] leading-[1.5]">
             Suvrin adds a compliance layer that plugs straight into the ERP you already run - so nothing changes for your team, and you go live fast, without the cost of a new system.
           </p>
 
           <div className="flex flex-col gap-2.5 sm:gap-3 pt-1">
             <div className="flex gap-2.5 sm:gap-3 items-center">
-              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#60a5fa] flex-shrink-0" />
-              <span className="text-xs sm:text-sm text-white/90">Implementing ERP in the UAE since 2003</span>
+              <span className="w-2 h-2 rounded-full bg-[#60A5FA] flex-shrink-0" />
+              <span className="text-[13px] sm:text-[14px] text-white/90">Implementing ERP in the UAE since 2003</span>
             </div>
             <div className="flex gap-2.5 sm:gap-3 items-center">
-              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#60a5fa] flex-shrink-0" />
-              <span className="text-xs sm:text-sm text-white/90">800+ regional customers</span>
+              <span className="w-2 h-2 rounded-full bg-[#60A5FA] flex-shrink-0" />
+              <span className="text-[13px] sm:text-[14px] text-white/90">800+ regional customers</span>
             </div>
             <div className="flex gap-2.5 sm:gap-3 items-center">
-              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#60a5fa] flex-shrink-0" />
-              <span className="text-xs sm:text-sm text-white/90">Live e-invoicing in production in KSA</span>
+              <span className="w-2 h-2 rounded-full bg-[#60A5FA] flex-shrink-0" />
+              <span className="text-[13px] sm:text-[14px] text-white/90">Live e-invoicing in production in KSA</span>
             </div>
           </div>
         </div>
 
         {/* RIGHT COLUMN: READINESS CHECK FORM CARD */}
-        <div id="readiness-form" className="lg:col-span-5 w-full mt-4 lg:mt-0 font-body">
+        <div id="readiness-form" className="lg:col-span-5 w-full mt-6 lg:mt-0 font-body">
           <div className="bg-white rounded-2xl p-5 sm:p-6 lg:p-7 shadow-[0_24px_54px_rgba(0,0,0,0.28)] text-slate-900 border border-slate-100 font-body">
             {submitted ? (
               <div className="py-8 text-center space-y-3 animate-in fade-in duration-300 font-body">

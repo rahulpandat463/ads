@@ -38,7 +38,7 @@ export default function HowItsDelivered() {
                   height={44}
                   className="h-7 sm:h-9 md:h-10 w-auto object-contain"
                 />
-                <span className="text-[11px] sm:text-[12.5px] font-semibold text-[#0B3B2E]">
+                <span className="text-[11px] sm:text-[12.5px] font-semibold text-[#0a1844]">
                   ISO 27001 certified
                 </span>
               </div>
@@ -52,7 +52,7 @@ export default function HowItsDelivered() {
                   height={44}
                   className="h-7 sm:h-9 md:h-10 w-auto object-contain"
                 />
-                <span className="text-[11px] sm:text-[12.5px] font-semibold text-[#0B3B2E]">
+                <span className="text-[11px] sm:text-[12.5px] font-semibold text-[#0a1844]">
                   SOC 2 compliant
                 </span>
               </div>
@@ -66,7 +66,7 @@ export default function HowItsDelivered() {
                   height={34}
                   className="h-6 sm:h-7 md:h-8 w-auto object-contain"
                 />
-                <span className="text-[11px] sm:text-[12.5px] font-semibold text-[#0B3B2E]">
+                <span className="text-[11px] sm:text-[12.5px] font-semibold text-[#0a1844]">
                   VAPT tested
                 </span>
               </div>
@@ -91,7 +91,7 @@ export default function HowItsDelivered() {
                   height={44}
                   className="h-7 sm:h-9 md:h-10 w-auto object-contain"
                 />
-                <span className="text-[11px] sm:text-[12.5px] font-semibold text-[#0B3B2E]">
+                <span className="text-[11px] sm:text-[12.5px] font-semibold text-[#0a1844]">
                   FTA compliant
                 </span>
               </div>

@@ -58,59 +58,59 @@ export default function SolutionLifecycle() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-stretch">
 
           {/* Card 1: Top Left (cols 1-4) */}
-          <div className="md:col-span-4 bg-white rounded-2xl p-7 lg:p-8 border border-blue-200/70 hover:border-[#2140A6] shadow-[0_2px_16px_rgba(33,64,166,0.04)] hover:shadow-[0_8px_30px_rgba(33,64,166,0.08)] transition-all duration-300 text-left flex flex-col justify-start group">
+          <div className="md:col-span-4 bg-white rounded-2xl p-6 sm:p-7 lg:p-8 border border-blue-200/70 hover:border-[#2140A6] shadow-[0_2px_16px_rgba(33,64,166,0.04)] hover:shadow-[0_8px_30px_rgba(33,64,166,0.08)] transition-all duration-300 text-left flex flex-col justify-start group">
             <div className="w-11 h-11 rounded-xl bg-blue-50/80 border border-blue-100 flex items-center justify-center mb-5 group-hover:scale-105 group-hover:bg-[#2140A6]/10 transition-transform">
               {solutions[0].icon}
             </div>
-            <h3 className="text-[18.5px] font-bold text-slate-900 tracking-tight leading-[1.3] mb-2.5">
+            <h3 className="text-[18px] sm:text-[18.5px] font-bold text-slate-900 tracking-tight leading-[1.3] mb-2.5">
               {solutions[0].title}
             </h3>
-            <p className="text-[15px] text-[#5A6470] leading-[1.55] font-normal">
+            <p className="text-[14.5px] sm:text-[15px] text-[#5A6470] leading-[1.55] font-normal">
               {solutions[0].description}
             </p>
           </div>
 
           {/* Card 2: Top Center (cols 5-8) */}
-          <div className="md:col-span-4 bg-white rounded-2xl p-7 lg:p-8 border border-blue-200/70 hover:border-[#2140A6] shadow-[0_2px_16px_rgba(33,64,166,0.04)] hover:shadow-[0_8px_30px_rgba(33,64,166,0.08)] transition-all duration-300 text-left flex flex-col justify-start group">
+          <div className="md:col-span-4 bg-white rounded-2xl p-6 sm:p-7 lg:p-8 border border-blue-200/70 hover:border-[#2140A6] shadow-[0_2px_16px_rgba(33,64,166,0.04)] hover:shadow-[0_8px_30px_rgba(33,64,166,0.08)] transition-all duration-300 text-left flex flex-col justify-start group">
             <div className="w-11 h-11 rounded-xl bg-blue-50/80 border border-blue-100 flex items-center justify-center mb-5 group-hover:scale-105 group-hover:bg-[#2140A6]/10 transition-transform">
               {solutions[1].icon}
             </div>
-            <h3 className="text-[18.5px] font-bold text-slate-900 tracking-tight leading-[1.3] mb-2.5">
+            <h3 className="text-[18px] sm:text-[18.5px] font-bold text-slate-900 tracking-tight leading-[1.3] mb-2.5">
               {solutions[1].title}
             </h3>
-            <p className="text-[15px] text-[#5A6470] leading-[1.55] font-normal">
+            <p className="text-[14.5px] sm:text-[15px] text-[#5A6470] leading-[1.55] font-normal">
               {solutions[1].description}
             </p>
           </div>
 
           {/* Card 3: Top Right (cols 9-12) */}
-          <div className="md:col-span-4 bg-white rounded-2xl p-7 lg:p-8 border border-blue-200/70 hover:border-[#2140A6] shadow-[0_2px_16px_rgba(33,64,166,0.04)] hover:shadow-[0_8px_30px_rgba(33,64,166,0.08)] transition-all duration-300 text-left flex flex-col justify-start group">
+          <div className="md:col-span-4 bg-white rounded-2xl p-6 sm:p-7 lg:p-8 border border-blue-200/70 hover:border-[#2140A6] shadow-[0_2px_16px_rgba(33,64,166,0.04)] hover:shadow-[0_8px_30px_rgba(33,64,166,0.08)] transition-all duration-300 text-left flex flex-col justify-start group">
             <div className="w-11 h-11 rounded-xl bg-blue-50/80 border border-blue-100 flex items-center justify-center mb-5 group-hover:scale-105 group-hover:bg-[#2140A6]/10 transition-transform">
               {solutions[2].icon}
             </div>
-            <h3 className="text-[18.5px] font-bold text-slate-900 tracking-tight leading-[1.3] mb-2.5">
+            <h3 className="text-[18px] sm:text-[18.5px] font-bold text-slate-900 tracking-tight leading-[1.3] mb-2.5">
               {solutions[2].title}
             </h3>
-            <p className="text-[15px] text-[#5A6470] leading-[1.55] font-normal">
+            <p className="text-[14.5px] sm:text-[15px] text-[#5A6470] leading-[1.55] font-normal">
               {solutions[2].description}
             </p>
           </div>
 
           {/* Card 4: Bottom Left (Centered under gap 1-2: cols 3-6) */}
-          <div className="md:col-start-3 md:col-span-4 bg-white rounded-2xl p-7 lg:p-8 border border-blue-200/70 hover:border-[#2140A6] shadow-[0_2px_16px_rgba(33,64,166,0.04)] hover:shadow-[0_8px_30px_rgba(33,64,166,0.08)] transition-all duration-300 text-left flex flex-col justify-start group">
+          <div className="md:col-start-3 md:col-span-4 bg-white rounded-2xl p-6 sm:p-7 lg:p-8 border border-blue-200/70 hover:border-[#2140A6] shadow-[0_2px_16px_rgba(33,64,166,0.04)] hover:shadow-[0_8px_30px_rgba(33,64,166,0.08)] transition-all duration-300 text-left flex flex-col justify-start group">
             <div className="w-11 h-11 rounded-xl bg-blue-50/80 border border-blue-100 flex items-center justify-center mb-5 group-hover:scale-105 group-hover:bg-[#2140A6]/10 transition-transform">
               {solutions[3].icon}
             </div>
-            <h3 className="text-[18.5px] font-bold text-slate-900 tracking-tight leading-[1.3] mb-2.5">
+            <h3 className="text-[18px] sm:text-[18.5px] font-bold text-slate-900 tracking-tight leading-[1.3] mb-2.5">
               {solutions[3].title}
             </h3>
-            <p className="text-[15px] text-[#5A6470] leading-[1.55] font-normal">
+            <p className="text-[14.5px] sm:text-[15px] text-[#5A6470] leading-[1.55] font-normal">
               {solutions[3].description}
             </p>
           </div>
 
           {/* Card 5: Bottom Right (Centered under gap 2-3: cols 7-10) */}
-          <div className="md:col-span-4 bg-white rounded-2xl p-7 lg:p-8 border border-blue-200/70 hover:border-[#2140A6] shadow-[0_2px_16px_rgba(33,64,166,0.04)] hover:shadow-[0_8px_30px_rgba(33,64,166,0.08)] transition-all duration-300 text-left flex flex-col justify-start group">
+          <div className="md:col-span-4 bg-white rounded-2xl p-6 sm:p-7 lg:p-8 border border-blue-200/70 hover:border-[#2140A6] shadow-[0_2px_16px_rgba(33,64,166,0.04)] hover:shadow-[0_8px_30px_rgba(33,64,166,0.08)] transition-all duration-300 text-left flex flex-col justify-start group">
             <div className="w-11 h-11 rounded-xl bg-blue-50/80 border border-blue-100 flex items-center justify-center mb-5 group-hover:scale-105 group-hover:bg-[#2140A6]/10 transition-transform">
               {solutions[4].icon}
             </div>
